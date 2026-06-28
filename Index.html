@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKATSUKI - Dynamic Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cyberpunk-bg-overlay">
+        <div class="hero-text-bg">
+            <h2>DIGITAL SOLUTIONS FOR A SMARTER FUTURE</h2>
+            <p>We build innovative digital experiences, intelligent software, AI solutions, and modern platforms that inspire the future.</p>
+        </div>
+        <div class="stats-footer-mock">
+            <span>250+ Projects Completed</span> | <span>99% Client Satisfaction</span> | <span>15+ Years Experience</span>
+        </div>
+    </div>
+
+    <div class="interface-wrapper">
+        
+        <header>
+            <div class="nav-group left-nav">
+                <a class="nav-link" id="home-nav-btn">Home</a>
+                <a class="nav-link" id="contact-nav-btn">Contact us</a>
+                <a class="nav-link" id="devs-nav-btn">Developers</a>
+            </div>
+            <div class="nav-group middle-nav">
+                <a class="nav-link" href="#links">Links</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#blog">Blog</a>
+            </div>
+            <div class="nav-group right-nav">
+                <a class="nav-link auth-trigger">Login</a>
+                <a class="nav-link auth-trigger">Sign In</a>
+                <a class="nav-link auth-trigger">Sign up</a>
+            </div>
+        </header>
+
+        <main class="homepage-layout-core" id="homepage-main">
+            <h1 class="brand-title">AKATSUKI</h1>
+            
+            <div class="sharingan-system">
+                <div class="eye-iris">
+                    <svg class="tomoe-vector-layer" id="sharingan-vectors" viewBox="0 0 100 100">
+                        <g fill="#000000">
+                            <path d="M50,15 C40,15 35,28 42,34 C48,40 58,32 54,24 Z" />
+                            <path d="M50,15 C40,15 35,28 42,34 C48,40 58,32 54,24 Z" transform="rotate(120 50 50)" />
+                            <path d="M50,15 C40,15 35,28 42,34 C48,40 58,32 54,24 Z" transform="rotate(240 50 50)" />
+                        </g>
+                    </svg>
+                    <div class="eye-pupil"></div>
+                </div>
+
+                <div class="hub-icon-box corner-tl" id="box-devs">
+                    🧪 <span>Devs</span>
+                </div>
+                <div class="hub-icon-box corner-tr" id="box-connect">
+                    📞 <span>Connect</span>
+                </div>
+                <div class="hub-icon-box corner-bl" id="box-football">
+                    ⚽ <span>Football</span>
+                </div>
+                <div class="hub-icon-box corner-br" id="box-anime">
+                    🌀 <span>Anime</span>
+                </div>
+            </div>
+
+            <section class="about-us-container">
+                <h2>About Us</h2>
+                <div class="about-essay">
+                    <h3>What is Akatsuki?</h3>
+                    <p>Akatsuki is a futuristic multi-dimensional layout ecosystem built purposefully to bridge the gap between application engineering, high-performance data networking, live interactive entertainment channels, and worldwide community portals. We act as a centralized nexus point where raw web development workflows gracefully intertwine with recreational passions like global football and anime subcultures.</p>
+                    
+                    <h3>Why Did We Create This Portal?</h3>
+                    <p>Traditional web platforms force users to compartmentalize their digital identities. Developers are forced onto sterile documentation repositories, sports enthusiasts are left tracking chaotic and cluttered news dashboards, and gaming or anime communities remain fragmented across standalone chat utilities. Akatsuki completely disrupts this standard paradigm by compiling everything into a unified cyberpunk environment that does not sacrifice system performance or aesthetic luxury.</p>
+                    
+                    <h3>How Do We Achieve This Objective?</h3>
+                    <p>Through state-of-the-art vector injection mechanics, optimized hardware-accelerated layouts, and glassmorphism interface architecture, we serve heavy live data streams—including real-time matchmaking, live scoreboards, repository code deployments, and media monitoring services—seamlessly beneath optimized graphical user environments. This approach delivers peak visual fidelity without placing heavy computing processing loads on user devices.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-text">Design | Develop | Play | Interact | Elevate</div>
+        </footer>
+    </div>
+
+    <div id="auth-modal" class="content-panel">
+        <h2>Join Akatsuki</h2>
+        <p class="panel-subtitle">Select your network identity provider:</p>
+        <form id="auth-registration-form">
+            <div class="auth-grid-selection">
+                <label class="provider-card">
+                    <input type="radio" name="gateway_provider" value="E-mail" checked>
+                    <span>✉️ E-mail</span>
+                </label>
+                <label class="provider-card">
+                    <input type="radio" name="gateway_provider" value="Discord">
+                    <span>👾 Discord</span>
+                </label>
+                <label class="provider-card">
+                    <input type="radio" name="gateway_provider" value="VPN">
+                    <span>🔒 Secure VPN</span>
+                </label>
+                <label class="provider-card">
+                    <input type="radio" name="gateway_provider" value="Phone">
+                    <span>📱 Phone SMS</span>
+                </label>
+            </div>
+            <input type="text" id="auth-credential-field" class="sys-input" placeholder="Enter target email/ID..." required>
+            <button type="submit" class="sys-btn">Generate Verification Code</button>
+        </form>
+        <button class="panel-dismiss-btn">Cancel</button>
+    </div>
+
+    <div id="otp-modal" class="content-panel">
+        <h2>Secure OTP Verification</h2>
+        <p class="panel-subtitle">Enter the 6-digit confirmation key deployed to your gateway account:</p>
+        <form id="otp-verification-form">
+            <div class="otp-fields-box">
+                <input type="text" maxlength="1" class="otp-digit" required>
+                <input type="text" maxlength="1" class="otp-digit" required>
+                <input type="text" maxlength="1" class="otp-digit" required>
+                <input type="text" maxlength="1" class="otp-digit" required>
+                <input type="text" maxlength="1" class="otp-digit" required>
+                <input type="text" maxlength="1" class="otp-digit" required>
+            </div>
+            <button type="submit" class="sys-btn verify-trigger">Validate Code</button>
+        </form>
+    </div>
+
+    <div id="devs-modal" class="content-panel wide-panel">
+        <h2>Developer Workspace Hub</h2>
+        <div class="dev-workspace-grid">
+            
+            <div class="dev-card">
+                <h3>🚀 Live Project Showcase</h3>
+                <p class="card-desc">Deploy your customized client-side applications for sandbox testing.</p>
+                <form id="dev-showcase-form">
+                    <input type="text" placeholder="Project Name" id="showcase-title" class="sys-input input-small" required>
+                    <input type="url" placeholder="Live Demo URL" id="showcase-url" class="sys-input input-small" required>
+                    <button type="submit" class="sys-btn btn-small">Publish Showcase Link</button>
+                </form>
+                <div class="dynamic-feed-box" id="showcase-target-gallery">
+                    <div class="feed-item"><strong>Chakra Dashboard</strong> by MasterDev <a href="#" target="_blank">Open ↗</a></div>
+                </div>
+            </div>
+
+            <div class="dev-card">
+                <h3>📦 Open Source Repository</h3>
+                <p class="card-desc">Acquire clean production-ready CSS code architecture for UI rendering engines.</p>
+                <div class="code-terminal-block">
+                    <code>animation: constantSpin 7s linear infinite;</code>
+                </div>
+                <button class="sys-btn btn-small" onclick="navigator.clipboard.writeText('animation: constantSpin 7s linear infinite;')">Copy Engine Classes</button>
+            </div>
+
+            <div class="dev-card">
+                <h3>📜 Technical System Logs</h3>
+                <div class="dynamic-feed-box logs-box">
+                    <div class="feed-item log-entry"><strong>v2.0.1</strong> - Deployed 6-digit multi-node OTP security layout arrays.</div>
+                    <div class="feed-item log-entry"><strong>v2.0.0</strong> - Transformed interface workspace theme blueprints to Akatsuki Cyberpunk specs.</div>
+                </div>
+            </div>
+
+        </div>
+        <button class="panel-dismiss-btn">Close Workspace</button>
+    </div>
+
+    <div id="foot-content-panel" class="content-panel panel-dashboard-wide">
+        <h2>⚽ Football Live Ticker Core</h2>
+        <p class="panel-subtitle">Real-time match matrices and global league tables.</p>
+        
+        <div class="dashboard-grid-layout">
+            <div class="dash-column">
+                <h3>Match Ticker</h3>
+                <div class="live-match-card streaming-pulse">
+                    <div class="match-meta">UCL • LIVE (74')</div>
+                    <div class="match-teams">
+                        <span>Real Madrid</span> <span class="score">2</span>
+                    </div>
+                    <div class="match-teams">
+                        <span>Man City</span> <span class="score">2</span>
+                    </div>
+                </div>
+                <div class="live-match-card">
+                    <div class="match-meta">La Liga • Today 21:00</div>
+                    <div class="match-teams">
+                        <span>Barcelona</span> <span class="score">-</span>
+                    </div>
+                    <div class="match-teams">
+                        <span>Atletico Madrid</span> <span class="score">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-column">
+                <h3>Table Standings</h3>
+                <table class="dash-table">
+                    <thead>
+                        <tr><th>POS</th><th>TEAM</th><th>PTS</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="top-row"><td>1</td><td>Real Madrid</td><td>84</td></tr>
+                        <tr class="top-row"><td>2</td><td>Man City</td><td>81</td></tr>
+                        <tr><td>3</td><td>Barcelona</td><td>76</td></tr>
+                        <tr><td>4</td><td>Bayern Munich</td><td>72</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <button class="panel-dismiss-btn">Disconnect Feed</button>
+    </div>
+
+    <div id="anime-content-panel" class="content-panel panel-dashboard-wide">
+        <h2>🌀 Anime & Gaming Node</h2>
+        <p class="panel-subtitle">Seasonal watch meters, air schedules, and community tracking.</p>
+        
+        <div class="dashboard-grid-layout">
+            <div class="dash-column">
+                <h3>Trending/Airing Today</h3>
+                <div class="anime-show-row">
+                    <div class="anime-poster-stub">🔥</div>
+                    <div class="anime-meta">
+                        <h4>Chainsaw Man Season 2</h4>
+                        <p>Ep 6 airing in 2h 14m</p>
+                    </div>
+                </div>
+                <div class="anime-show-row">
+                    <div class="anime-poster-stub">⚡</div>
+                    <div class="anime-meta">
+                        <h4>Jujutsu Kaisen</h4>
+                        <p>Completed • Season 3 Announced</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-column">
+                <h3>Guild Favorites</h3>
+                <div class="stat-progress-bar">
+                    <div class="progress-lbl">Naruto Shippuden <span>94% user match</span></div>
+                    <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
+                </div>
+                <div class="stat-progress-bar">
+                    <div class="progress-lbl">Attack on Titan <span>88% user match</span></div>
+                    <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+                </div>
+            </div>
+        </div>
+        <button class="panel-dismiss-btn">Disconnect Node</button>
+    </div>
+
+    <div id="comm-content-panel" class="content-panel panel-dashboard-wide">
+        <h2>📞 Akatsuki Secure Matrix Chat</h2>
+        <p class="panel-subtitle">Decentralized user relays. Active operatives online: <span class="online-counter">32</span></p>
+        
+        <div class="chat-dashboard-container">
+            <div class="chat-channels-sidebar">
+                <h4>Channels</h4>
+                <div class="channel-item active-channel"># general-chat</div>
+                <div class="channel-item"># anime-zone</div>
+                <div class="channel-item"># football-talk</div>
+                <div class="channel-item"># dev-lounge</div>
+            </div>
+
+            <div class="chat-main-window">
+                <div class="chat-logs-display" id="chat-logs-box">
+                    <div class="chat-msg"><strong>Naruto_Uzumaki:</strong> Believe it!!! 🦊</div>
+                    <div class="chat-msg"><strong>Sasuke_Uchiha:</strong> Chidori is ready... ⚡</div>
+                    <div class="chat-msg"><strong>Itachi_07:</strong> You lack enough cookies.</div>
+                </div>
+                <form id="chat-submission-input-form" class="chat-input-bar">
+                    <input type="text" placeholder="Broadcast a encrypted message..." id="chat-raw-text" required autocomplete="off">
+                    <button type="submit">🛩️</button>
+                </form>
+            </div>
+        </div>
+        <button class="panel-dismiss-btn">Disconnect Terminal</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
